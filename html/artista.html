@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro artista</title>
+    <link rel="stylesheet" href="../css/artista.css">
+
+
+</head>
+<body>
+    <div id="cima"> 
+<img src="../imagens/Lyfers.png"  id="logo">
+<button id="but1" " onclick="window.location.href='../php/listar_arte.php'; ">lista arte</button>
+<button id="but2" " onclick="window.location.href='arte.html'; ">cadastro arte</button>
+<button id="but3" " onclick="window.location.href='../php/listar_artista.php'; ">lista artista</button>
+<button id="but4" " onclick="window.location.href='index.html'; ">inicio</button>
+    </div>
+    <div id="ca">
+        <h2>Cadastro do Artista</h2>
+        <form action="../php/salvar_artista.php" method="POST">
+            <label id="titulo1" class="labels">Nome do artista</label>
+            <input type="text" id="titulo" class="inputs" name="nome" required>
+
+            <label id="artista1" class="labels">Email</label>
+            <input type="email" id="artista" class="inputs" name="Email" required>
+
+            <label id="ano1" class="labels">Numero de telefone</label>
+            <input type="tel" id="ano" class="inputs" name="Tel"  required>
+
+            <label id="descricao1" class="labels">Biografia</label>
+            <textarea id="descricao"  name="descricao" rows="4"></textarea>
+
+            <button type="submit">Cadastrar Artista</button>
+        </form>
+    </div>
+    
+</body>
+</html>

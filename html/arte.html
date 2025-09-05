@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro arte</title>
+    <link rel="stylesheet" href="../css/arte.css">
+
+
+</head>
+<body>
+    <div id="cima">
+<img src="../imagens/Lyfers.png"  id="logo">
+<button id="but1" " onclick="window.location.href='../php/listar_arte.php'; ">lista arte</button>
+<button id="but2" " onclick="window.location.href='arte.html'; ">cadastro arte</button>
+<button id="but3" " onclick="window.location.href='../php/listar_artista.php'; ">lista artista</button>
+<button id="but4" " onclick="window.location.href='index.html'; ">inicio</button>
+    </div>
+        
+        <form action="../php/salvar_arte.php" method="POST" id="ca" enctype="multipart/form-data">
+            <h2>Cadastro de Artes </h2>
+        
+            <label id="titulo1" class="labels">Título da Pintura</label>
+            <input type="text" id="titulo" name="titulo" required class="inputs">
+
+            <label id="artista1" class="labels">Nome do Artista</label>
+            <input type="text" id="artista" name="artista" required class="inputs">
+
+            <label id="ano1" class="labels">Ano de Criação</label>
+            <input type="text" id="ano" name="ano"  required class="inputs">
+
+            <label id="tecnica1" class="labels">Técnica Utilizada</label>
+            <input type="text" id="tecnica" name="tecnica" class="inputs">
+
+            <label id="descricao" class="labels">Descrição</label>
+            <textarea id="descricao1" name="descricao" rows="4"></textarea>
+
+            <div id="div_submit">
+                <label for="imagem" class="labels">Imagem da arte</label>
+                <input type="file" name="imagem" id="imagem" accept="image/*" required>
+                
+            <button type="submit">Cadastrar Arte</button></div>
+            </form>
+     
+</body>
+</html>
