@@ -7,5 +7,6 @@ $telefone = $_POST['telefone'];
 $biografia = $_POST['descricao'];
 
 $sql->query("INSERT INTO artista ( id , artista , email , telefone , biografia ) values (default,'$artista','$email','$telefone','$biografia')");
-
+header('../html/artista.html');
+exit();
 ?> 

@@ -1,0 +1,12 @@
+table{
+    width: 90vw;
+    margin-left: 5vw;
+    border-collapse: collapse;
+    font-size: 1em;
+    height: auto;
+}
+th,td{
+    border: 1px solid black;
+    padding: 12px;
+    text-align: center;
+}
