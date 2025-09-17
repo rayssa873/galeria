@@ -12,7 +12,7 @@
         include "conexao.php";
 
         //Consulta ao banco de dados
-        $query = $sql->query("SELECT * FROM artes");
+        $query = $sql->query("SELECT * FROM artista");
 
         if(!$query){
             die("Erro ao buscar dados: " . $sql->error);
@@ -20,12 +20,11 @@
     ?>
       <table border="1">
         <tr>
-            <th>Foto</th>
             <th>Código</th>
-            <th>Titulo</th>
             <th>Artista</th>
-            <th>Tecnica</th>
-            <th>descrição</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th>Biografia</th>
             <th colspan="2">Ação</th>
         </tr>
 
@@ -46,8 +45,8 @@
             <td>$email</td>
             <td>$telefone</td>
             <td>$biografia</td>
-            <td><a href=\"editar.php?codigo=$codigo\">Editar</a></td>
-            <td><a href=\"excluir.php?codigo=$codigo\">Excluir</a></td>
+            <td><a href=\"editar_artista.php?codigo=$codigo\">Editar</a></td>
+            <td><a href=\"excluir_artista.php?codigo=$codigo\">Excluir</a></td>
         </tr>
     ";
    }
