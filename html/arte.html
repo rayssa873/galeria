@@ -11,11 +11,12 @@
 <body>
     <div id="cima">
 <img src="../imagens/Lyfers.png"  id="logo">
-<button id="but1" " onclick="window.location.href='../php/listar_arte.php'; ">lista arte</button>
-<button id="but2" " onclick="window.location.href='arte.html'; ">cadastro arte</button>
-<button id="but3" " onclick="window.location.href='../php/listar_artista.php'; ">lista artista</button>
-<button id="but4" " onclick="window.location.href='../index.html'; ">inicio</button>
-    </div>
+<button class="botao" id="firstbotao" onclick="location.href='../index.html'">Inicio</button>
+<button class="botao" id="secondbotao" onclick="location.href='artista.html'">Cadastrar Artista</button>
+<button class="botao" id="thirdbotao" onclick="location.href='arte.html'">Cadastrar Arte</button>
+<button class="botao" id="fourthbotao" onclick="location.href='../php/listar_artista.php'">Listar Artista</button>
+<button class="botao" id="fifthbotao" onclick="location.href='../php/listar_arte.php'">Listar Arte</button>
+</div>
         
         <form action="../php/salvar_arte.php" method="POST" id="ca" enctype="multipart/form-data">
             <h2>Cadastro de Artes </h2>

@@ -41,6 +41,7 @@ if (isset($_FILES['imagem']) && $_FILES['imagem']['error'] === UPLOAD_ERR_OK) {
 
 $sql->query("INSERT INTO artes ( id ,titulo , descricao , artista , ano , tecnica , imagem ) values (default,'$titulo','$descricao','$artista','$ano','$tecnica','$caminhoArquivo')");
 
-
+header('Location: ../html/arte.html');
+exit();
 
 ?> 

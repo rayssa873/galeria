@@ -5,10 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/arte.css">
+    <link rel="stylesheet" href="../css/listar.css">
 </head>
 <body>
- 
+ <div id="cima">
+<img src="../imagens/Lyfers.png"  id="logo">
+<button class="botao" id="firstbotao" onclick="location.href='../index.html'">Inicio</button>
+<button class="botao" id="secondbotao" onclick="location.href='../html/artista.html'">Cadastrar Artista</button>
+<button class="botao" id="thirdbotao" onclick="location.href='../html/arte.html'">Cadastrar Arte</button>
+<button class="botao" id="fourthbotao" onclick="location.href='listar_artista.php'">Listar Artista</button>
+<button class="botao" id="fifthbotao" onclick="location.href='listar_arte.php'">Listar Arte</button>
+</div>
 <?php
         include "conexao.php";
 
@@ -53,8 +60,8 @@
             <td>$artista</td>
             <td>$tecnica</td>
             <td>$descricao</td>
-            <td><a href=\"editar.php?codigo=$codigo\">Editar</a></td>
-            <td><a href=\"excluir.php?codigo=$codigo\">Excluir</a></td>
+            <td><a href=\"editar_arte.php?codigo=$codigo\">Editar</a></td>
+            <td><a href=\"excluir_arte.php?codigo=$codigo\">Excluir</a></td>
         </tr>
     ";
 }

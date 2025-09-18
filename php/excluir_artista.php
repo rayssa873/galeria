@@ -3,6 +3,6 @@ include 'conexao.php';
 $codigo = $_GET['codigo'];
 
 $sql->query("DELETE FROM artista WHERE id=$codigo");
-header('listar_artista');
-exit()
+header('Location: listar_artista.php');
+exit();
 ?>

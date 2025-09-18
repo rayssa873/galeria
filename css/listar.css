@@ -1,12 +1,51 @@
+body{
+    overflow-x: hidden;
+}
 table{
     width: 90vw;
     margin-left: 5vw;
     border-collapse: collapse;
     font-size: 1em;
     height: auto;
+    margin-top: 1vh;
 }
 th,td{
     border: 1px solid black;
     padding: 12px;
     text-align: center;
+}
+#cima{
+    width: 100vw;
+    height: 8vh;
+    margin-top: 0vw;
+    margin-left: 0vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+#logo{
+    width: 140px;
+    height: 140px;
+    margin-top: -4vh;
+    margin-left: 0%;
+}
+.botao{
+    font-size: 0.9em ;
+    background-color: #737373;
+    border-radius: 16px;
+    width: 8vw;
+    height: 7vh;
+    margin-left: 1vw;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    color: white;
+}
+#firstbotao{
+    margin-left: 45vw;
+}
+.botao:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
 }
